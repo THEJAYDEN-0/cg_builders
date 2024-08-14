@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+<!-- OneTrust Cookies Consent Notice start for cg-builder.netlify.app -->
+<script type="text/javascript" src="https://cdn.cookielaw.org/consent/01914a6e-1372-7e2f-88d4-30915f881d9e/OtAutoBlock.js" ></script>
+<script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"  type="text/javascript" charset="UTF-8" data-domain-script="01914a6e-1372-7e2f-88d4-30915f881d9e" ></script>
+<script type="text/javascript">
+function OptanonWrapper() { }
+</script>
+<!-- OneTrust Cookies Consent Notice end for cg-builder.netlify.app -->
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CG-Builders</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      function setCookie(name, value, days) {
+    const date = new Date();
+    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+    const expires = "expires=" + date.toUTCString();
+    document.cookie = name + "=" + value + ";" + expires + ";path=/";
+}
+
+// Set a cookie for user preferences
+setCookie('theme', 'dark', 7);  // Theme preference set to 'dark' for 7 days
+
+// Set a session cookie
+setCookie('session_id', 'abc123xyz789', 1);  // Session ID valid for 1 day
+
+// Set a language preference cookie
+setCookie('language', 'en', 30);  // Language preference set to 'English' for 30 days
+
+
+    </script>
+  </body>
+</html>
